@@ -1,0 +1,3 @@
+[submodule "src/lib/material-design"]
+	path = src/lib/material-design
+	url = https://github.com/webix-hub/material-design-skin.git

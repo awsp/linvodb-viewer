@@ -1,0 +1,15 @@
+.DS_Store
+*~
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+bower_components/
+node_modules/
+src/bower_components/
+src/node_modules/
+build/*
+!build/.gitkeep

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: mplus-2pm;
+  src: url('../fonts/mplus-2p-medium.ttf') format("truetype");
+}
+.reset-margin {
+  margin: 0;
+}
+.reset-padding {
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+}
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  user-select: none;
+}
+body {
+  font-size: 13px;
+  overflow: hidden;
+  font-family: mplus-2pm, serif !important;
+}
+#linvodb-viewer #file-drop {
+  background: #eee;
+  width: 400px;
+  height: 400px;
+}
+#linvodb-viewer .webix_hcell,
+#linvodb-viewer webix_cell {
+  font-size: 12px;
+  font-family: mplus-2pm, serif !important;
+}
+#linvodb-viewer .webix_template {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+#linvodb-viewer #drop-notice {
+  font-size: 16px;
+}

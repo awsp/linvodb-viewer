@@ -1,0 +1,15 @@
+{
+  "name": "linvodb-viewer",
+  "version": "0.3.0",
+  "description": "LinvoDB Viwer",
+  "main": "main.js",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "linvodb3": "^3.10.0",
+    "medeadown": "^1.1.7",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "author": "Anthony S. Wu <anthony@ssetp.com>",
+  "license": "MIT"
+}

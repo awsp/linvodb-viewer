@@ -1,0 +1,23 @@
+{
+  "name": "linvodb-viwer",
+  "version": "0.3.0",
+  "authors": [
+    "awsp <anthonyspwu@gmail.com>"
+  ],
+  "description": "LinovoDb Viewer",
+  "main": "app.js",
+  "keywords": [
+    "LinovoDB"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webix": "~2.5.0"
+  }
+}
