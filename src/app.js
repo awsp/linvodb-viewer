@@ -8,7 +8,7 @@ LinvoDB.defaults.store = {db: require("medeadown")};
   webix.ready(function () {
     webix.ui({
       container: "linvodb-viewer",
-      //type: 'line',
+      id: "linvodb-viewer",
       height: window.innerHeight,
       width: window.innerWidth,
       rows: [
@@ -70,7 +70,15 @@ LinvoDB.defaults.store = {db: require("medeadown")};
   $(window).resize(function () {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(function doneResizing() {
+      $$("linvodb-viewer").config.width = window.innerWidth;
+      $$("linvodb-viewer").config.height = window.innerHeight;
       $$("linvodb-viewer").resize();
+
+      if ($$("datatable")) {
+        $$("datatable").config.width = window.innerWidth;
+        $$("datatable").config.height = window.innerHeight;
+        $$("datatable").resize();
+      }
     }, 250);
   });
 

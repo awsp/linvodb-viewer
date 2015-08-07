@@ -6,7 +6,9 @@ app.on('ready', function () {
   var mainWindow = new BrowserWindow({
     width: 900,
     height: 600,
-    show: true
+    show: true,
+    'min-width': 640,
+    'min-height': 480
   });
 
   mainWindow.loadUrl('file://' + __dirname + '/app.html');

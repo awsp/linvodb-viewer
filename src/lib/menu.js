@@ -52,6 +52,7 @@ var template = [
     submenu: [
       {
         label: 'Open',
+        accelerator: 'CmdOrCtrl+O',
         click: function () {
           dialog.showOpenDialog({
             properties: ['openDirectory', 'multiSelections']

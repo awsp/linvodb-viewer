@@ -14,3 +14,7 @@ Windows
 ```
 $ electron-packager ./src "LinvoDB Viewer" --platform=win32 --arch=x64 --version=0.30.2 --out=./build/ --icon=resources/app.ico --asar
 ```
+
+#### TODO
+- Ability to add/remove/modify entity
+- Multiple windows / tabs
