@@ -57,30 +57,15 @@ var template = [
           dialog.showOpenDialog({
             properties: ['openDirectory', 'multiSelections']
           }, function (fileDir) {
-            operation.loadDb(LinvoDB, fileDir[0], function (Doc) {
-              Doc.find({}, function (err, docs) {
-                if (docs.length > 0) {
-                  var schema = operation.getSchema(docs[0]);
-                  $("#drop-notice").hide();
-
-                  if (operation.instance) {
-                    operation.instance.destructor();
-                  }
-
-                  operation.instance = new webix.ui({
-                    id: "datatable",
-                    container: "datatable",
-                    view: "datatable",
-                    columns: schema,
-                    width: window.innerWidth,
-                    height: window.innerHeight,
-                    columnWidth: 200,
-                    data: docs
-                  });
-                }
-              });
-            });
+            operation.loadDoc(fileDir[0], LinvoDB, webix);
           });
+        }
+      },
+      {
+        label: 'Reload',
+        accelerator: 'CmdOrCtrl+D',
+        click: function () {
+          operation.reloadDoc();
         }
       }
     ]

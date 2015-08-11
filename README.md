@@ -1,4 +1,4 @@
-LinvoDB Viewer
+LinvoDB Viewer @version 0.4.1
 --------------------------------------------------------------------------------
 A very simple tool to visualize data from [LinvoDB3](https://github.com/Ivshti/linvodb3) Engine, by simple drag-n-drop. Built on Electron.
  

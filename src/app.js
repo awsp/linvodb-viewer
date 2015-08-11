@@ -29,29 +29,7 @@ LinvoDB.defaults.store = {db: require("medeadown")};
       e.preventDefault();
       var file = e.dataTransfer.files[0];
       try {
-        operation.loadDb(LinvoDB, file.path, function (Doc) {
-          Doc.find({}, function (err, docs) {
-            if (docs.length > 0) {
-              var schema = operation.getSchema(docs[0]);
-              $("#drop-notice").hide();
-
-              if (operation.instance) {
-                operation.instance.destructor();
-              }
-
-              operation.instance = new webix.ui({
-                id: "datatable",
-                container: "datatable",
-                view: "datatable",
-                columns: schema,
-                width: window.innerWidth,
-                height: window.innerHeight,
-                columnWidth: 200,
-                data: docs
-              });
-            }
-          });
-        });
+        operation.loadDoc(file.path, LinvoDB, webix);
       }
       catch (e) {
         var remote = require('remote');
